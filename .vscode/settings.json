@@ -1,0 +1,9 @@
+{
+  "grammarly.selectors": [
+    {
+      "language": "vue",
+      "scheme": "file",
+      "pattern": "components/Car/SearchBar.vue"
+    }
+  ]
+}
