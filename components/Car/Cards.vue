@@ -1,8 +1,12 @@
 <script setup>
-const { cars } = useCars();
+const { cars } = defineProps({
+  cars: {
+    type: Array,
+    required: true,
+  },
+});
 
 const favorite = useLocalStorage('favorite', {});
-console.log('favorite.value', favorite.value);
 const handleFavorite = (id) => {
   if (id in favorite.value) {
     delete favorite.value[id];
